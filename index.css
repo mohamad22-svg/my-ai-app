@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+
+@theme {
+  --font-sans: "Tajawal", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#020617] text-slate-50 antialiased;
+  }
+}
+
+/* Custom range input styling */
+input[type="range"]::-webkit-slider-thumb {
+  @apply w-6 h-6 bg-blue-500 rounded-full cursor-pointer shadow-lg shadow-blue-500/50 border-2 border-white;
+}
+
+input[type="range"]::-moz-range-thumb {
+  @apply w-6 h-6 bg-blue-500 rounded-full cursor-pointer shadow-lg shadow-blue-500/50 border-2 border-white;
+}
